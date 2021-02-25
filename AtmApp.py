@@ -38,4 +38,4 @@ while True:
         print ("Kalan Bakiye {} TL".format(Hesaplimiti))
 
     else:
-        print("Geçersiz İşlem")
+        print("Geçersiz İşlem.")
