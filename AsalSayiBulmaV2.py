@@ -37,7 +37,7 @@ while True:
         print(sayi, "asal bir sayıdır.")
 
     else:
-        if (asal_mi(sayi)):
+        if (asal_mi(sayi)): #asal_mi fonksiyonu TRUE olursa bu blok çalışır.
             print(sayi, "asal bir sayıdır.")
             
         else:
