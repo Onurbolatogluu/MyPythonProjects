@@ -18,18 +18,21 @@ while True:
         print("Tebrikler!")
         print("Sayı", rastgele_sayı)
         break
+
     elif(tahmin < rastgele_sayı):
         print("Sayı Sorgulanıyor....")
         time.sleep(1)
         tahmin_hakkı -= 1
         print("Lütfen daha yüksek bir sayı söyleyin.")
         print("Tahmin Hakkı:", tahmin_hakkı)
+
     else:
         print("Sayı Sorgulanıyor....")
         time.sleep(1)
         tahmin_hakkı -= 1
         print("Lütfen daha düşük bir sayı söyleyin.")
         print("Tahmin Hakkı:", tahmin_hakkı)
+        
     if (tahmin_hakkı == 0):
         print("Tahmin Hakkınız Bitti. Üzgünüz")
         print("Sayımız:", rastgele_sayı)
