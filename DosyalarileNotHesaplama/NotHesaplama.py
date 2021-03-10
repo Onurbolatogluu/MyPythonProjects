@@ -1,6 +1,6 @@
 def not_hesapla(satır):
     # Fonksiyon oluşturduk ve bu fonksiyon içerisine her bir satırı göndereceğiz.
-    satır = satır[:-1]
+    satır = satır.rstrip("\n")
     # Dosyamızın içerisinde bulunan satırların her birinin sonunda print işlemi gereğince varsayılan olarak \n karakteri var.
     # Durum böyle olunca satırlarımızın sonunda bir boşluk oluşuyor. Bunun önüne geçmek adına biz satırın tamamını almak yerine,
     # Son karakteri almadan devam ediyoruz yani \n karakterini almıyoruz. ve bunu da tekrar satır değişkenine atıyoruz.
