@@ -1,36 +1,33 @@
 def ekstra(fonk):
 
-    def wrapper(sayılar):
-        print("*****Mükemmel Sayılar*****")
-        for sayı in sayılar:
-            bölenler = list()
-            for bölen in range(1, sayı):
-                if sayı % bölen == 0:
-                    bölenler.append(bölen)
-            toplam = 0 
-            for j in bölenler:
-                toplam += j
-            if toplam == sayı:
-                print(sayı) 
-        fonk(sayılar) 
-    return wrapper
- 
-@ekstra
-def asal_sayılar(sayılar):
-    print("*****Asal Sayılar*****")
-    for sayı in sayılar:
-        x = 0
-        if sayı == 0 or sayı ==1:
-            continue
+    def ekstra_ozellik():
+        print("Mükemmel Sayılar...")
+        for sayı in range(1, 1001):
+            toplam = 0
+            i = 1
+            while (i < sayı):
+                if (sayı % i == 0):
+                    toplam += i
+                i += 1
+            if (toplam == sayı):
+                print(sayı)
+        fonk()
 
-        elif sayı == 2:
+    return ekstra_ozellik
+
+
+@ekstra
+def asal_sayılar():
+    print("Asal Sayılar...")
+    for sayı in range(2, 1001):
+        i = 2
+        say = 0
+        while (i < sayı):
+            if (sayı % i == 0):
+                say += 1
+            i += 1
+        if (say == 0):
             print(sayı)
 
-        else:
-            for bölen in range(2,sayı): 
-                if sayı % bölen == 0:
-                    x += 1 
-            if x == 0:
-                print(sayı)
-                 
-asal_sayılar(range(2,1001))
+
+asal_sayılar()
