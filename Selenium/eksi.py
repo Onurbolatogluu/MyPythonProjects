@@ -29,22 +29,10 @@ browser.close()
 """
 browser.get(url) # İlgili url'i aç.
 
-
 time.sleep(5) # 10 saniye bekle.
-
-
-
-
-
-
-
-
 
 elements = browser.find_elements_by_css_selector(".content")
 # İlgili url üzerinde class'ı content olan tüm objeleri sorguluyoruz.
-
-
-
 
 for element in elements:
     print("***************************")
